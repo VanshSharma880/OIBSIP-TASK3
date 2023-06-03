@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my3style.css">
+    <title>vansh temperature converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="box" onsubmit="calculateTemp(); return false">
+            <h1>TEMPERATURE-CONVERTER</h1>
+            <br>
+            <label for="label-edit">Degrees</label>
+            <input type="number" name="label-edit" id="label-edit" value="">
+            <label for="label-edit">Type</label>
+            <select name="type" id="type">
+                <option value="celsius">&#176;Celsius</option>
+                <option value="fahrenheit">&#176;Fahrenheit</option>
+            </select>
+            <br>
+            <input type="submit" name="label-edit" id="convert" value="Convert">
+            <br>
+            <label for="label-edit" style="font-weight: 550;
+            font-size: 30px;
+            padding: 0px 20px;
+            background-color: #ffff9a;">-Result-</label>
+
+            <span id="result" sty></span>
+        </form>
+    </div>
+
+    <script src="my3script.js"></script>
+</body>
+
+</html>
